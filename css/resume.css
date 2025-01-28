@@ -56,31 +56,17 @@ h2 {
   text-transform: uppercase; }
 
 @media (min-width: 992px) {
-  #sideNav {
-      position: fixed;
+#sideNav {
+  position: fixed;
   width: 100%;
   z-index: 1030;
-    #sideNav .navbar-brand {
-      display: flex;
-      margin: auto auto 0;
-      padding: 0.5rem; }
-      #sideNav .navbar-brand .img-profile {
-      max-width: 3rem;
-      max-height: 3rem;
-      border: 0.2rem solid rgba(255, 255, 255, 0.2);
-    #sideNav .navbar-collapse {
-      display: flex;
-      align-items: flex-start;
-      flex-grow: 0;
-      width: 100%;
-      margin-bottom: auto; }
-      #sideNav .navbar-collapse .navbar-nav {
-        flex-direction: column;
-        width: 100%; }
-        #sideNav .navbar-collapse .navbar-nav .nav-item {
-          display: block; }
-          #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
-            display: block; } }
+}
+
+#sideNav .navbar-brand .img-profile {
+  max-width: 3rem;
+  max-height: 3rem;
+  border: 0.2rem solid rgba(255, 255, 255, 0.2);
+}
 
 section.resume-section {
   border-bottom: 1px solid #dee2e6;
