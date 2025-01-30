@@ -4,14 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
-</head>
-       <body>
-      <style>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Ensure html and body take up the full height of the viewport */
+        html, body {
+            height: 100%;
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
+
+        body {
             background-image: url('SVG Files/Untitled presentation (1).svg');
-            background-size: auto; /* or any other value */
-            background-repeat: no-repeat; /* Avoid repeating */
+            background-size: contain; /* Use 'cover' if you want the image to fill the entire background */
+            background-repeat: no-repeat;
+            background-position: center;
+            min-height: 100vh; /* Ensure body takes up at least the full viewport height */
+            display: flex; /* Optional: Use flexbox for better layout control */
+            justify-content: center; /* Optional: Center content horizontally */
+            align-items: center; /* Optional: Center content vertically */
         }
     </style>
-           </body>
+</head>
+<body>
+    <!-- Your content goes here -->
+</body>
 </html>
