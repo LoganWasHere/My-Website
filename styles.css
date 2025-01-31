@@ -15,6 +15,19 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    #clearButton {
+    background-color: #f44336; /* Red background */
+    color: white; /* White text */
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
 }
 
 /* Header Styling */
