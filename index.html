@@ -1,35 +1,42 @@
-<html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
-    <link rel="stylesheet" href="styles.css">
-    
-</head>
-<body>
     <style>
-        /* Ensure html and body take up the full height of the viewport */
         html, body {
             height: 100%;
-            margin: 0; /* Remove default margin */
-            padding: 0; /* Remove default padding */
+            margin: 0;
+            padding: 0;
         }
 
         body {
             background-image: url('pages/Landing.png');
-            background-size: cover; /* Use 'cover' if you want the image to fill the entire background */
+            background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
-            min-height: 100vh; /* Ensure body takes up at least the full viewport height */
-            display: flex; /* Optional: Use flexbox for better layout control */
-            justify-content: center; /* Optional: Center content horizontally */
-            align-items: center; /* Optional: Center content vertically */
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #clearButton {
+            position: fixed; /* Use 'fixed' instead of 'absolute' */
+            top: 50px;
+            left: 50px;
         }
     </style>
+</head>
+<body>
+    <button id="clearButton">Clear</button>
+
     <script>
-    document.getElementById('clearButton').addEventListener('click', function() {
-        // Clear functionality goes here
-        console.log('Clear button clicked');
-    });
-</script>
+        document.getElementById('clearButton').addEventListener('click', function() {
+            // Clear functionality goes here
+            console.log('Clear button clicked');
+        });
+    </script>
 </body>
 </html>
