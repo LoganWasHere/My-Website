@@ -1,44 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-     <link rel="stylesheet" href="style.css"> 
-    <style>
-        html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Improved CSS for background image */
+    body {
+      background-image: url('https://i.postimg.cc/0Q2gqWPY/Landing.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-        body {
-            background-image: url('pages/Landing.png');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        #clearButton {
-            position: fixed; /* Use 'fixed' instead of 'absolute' */
-            top: 50px;
-            left: 50px;
-        }
-    </style>
+    /* Improved button styling (optional) */
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+       background-color: transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    }
+  </style>
 </head>
 <body>
-    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTlB7up0B3xvJgJtQ8DzKtz_QU2z9CrOWmLAUZtsV1YmATK-DrRjCcbH2fC84fBjGKWbDUgVQLIKY4D/embed?start=false&loop=true&delayms=3000" frameborder="0" width="1440" height="839" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-    <button id="clearButton">Clear</button>
-
-    <script>
-        document.getElementById('clearButton').addEventListener('click', function() {
-            // Clear functionality goes here
-            console.log('Clear button clicked');
-        });
-    </script>
+  <button id="clearButton">Clear</button>  <script>
+    // Add JavaScript here to implement functionality for the button (optional)
+    document.getElementById('clearButton').addEventListener('click', function() {
+      // Your clear functionality code here (e.g., clear form fields, hide elements)
+    });
+  </script>
 </body>
 </html>
